@@ -6,11 +6,18 @@ from math import inf
 
 class BusNetwork:
     def __init__(self) -> None:
-        with open('bus_network_w_distances_222.pickle', 'rb') as file:
+        with open('bus_network_w_distances.pickle', 'rb') as file:
             bus_network = pickle.load(file)
             self.bus_stops = bus_network['stops']
             self.bus_services = bus_network['routes']
             self.distances = bus_network['distances']
+
+            for stop1 in self.distances:
+                for stop2 in self.distances[stop1]:
+                    if self.distances[stop1][stop2] < 222:
+                        busStop_Obj1 = self.bus_stops[stop1]
+                        busStop_Obj2 = self.bus_stops[stop2]
+                        busStop_Obj1.next_stops["walk"] = busStop_Obj2
 
             for name in self.distances:
                 self.distances[name][name] = 0
@@ -99,7 +106,7 @@ class BusNetwork:
 
             # get node with lowest cost in open list
             for node in open_list:
-                
+
                 if current_node == None or cost[node] + self.distances[node.name][end_node.name] < cost[current_node] + self.distances[current_node.name][end_node.name]:
                     current_node = node
 
