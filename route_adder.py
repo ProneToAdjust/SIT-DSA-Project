@@ -1,50 +1,25 @@
 import pickle
-import json
+
+threshold = 222
 
 with open('bus_network_w_distances.pickle', 'rb') as file:
     bus_network = pickle.load(file)
     bus_stops = bus_network['stops']
+    bus_services = bus_network['routes']
     distances = bus_network['distances']
 
-# 'route_base.json', 'route_base_modified', 222
-def juice_route_modify(filename_in, filename_out, threshold):
-    f = open(filename_in)
-    data = json.load(f)
-    f.close()
+for stop in distances:
+    web = distances[stop]
+    for close in web:
+        if web[close] < threshold:
+            
+            busStop_Obj1 = bus_stops[stop]
+            nextStop = busStop_Obj1.next_stops
+            busStop_Obj2 = bus_stops[close]
 
-    for stop in distances:
-        web = distances[stop]
-        for close in web:
-            if web[close] < threshold:
-                dump = data.get(stop)
-                info = {"name":close,"transport":"walk","distance":web[close]}
-                dump.append(info)
-                data[stop] = dump
+            nextStop["walk"] = busStop_Obj2
+            busStop_Obj1.next_stops = nextStop
 
-    file = open('{}{}.json'.format(filename_out,threshold), 'w')
-    file.write(json.dumps(data))
-    file.close()
+with open('bus_network_w_distances_{}.pickle'.format(threshold), 'wb') as file:
+    pickle.dump(bus_network, file, protocol=pickle.HIGHEST_PROTOCOL)
 
-# 'route_base.json'
-def juice_route(filename):
-    data = {}
-    for stop in bus_stops:
-        data1 = []
-        links = bus_stops.get(stop).next_stops
-        for link in links: 
-            data2 = {}
-
-            next_stop = links.get(link).name
-            distance = distances[stop][next_stop]
-
-            data2["name"] = next_stop
-            data2["transport"] = link
-            data2["distance"] = distance
-            data1.append(data2)
-        data[stop] = data1
-
-    file = open(filename, 'w')
-    file.write(json.dumps(data))
-    file.close()
-
-juice_route_modify('route_base.json', 'route_base_modified', 222)
