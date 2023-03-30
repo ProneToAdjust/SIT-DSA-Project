@@ -14,7 +14,7 @@ class BusNetwork:
 
             for stop1 in self.distances:
                 for stop2 in self.distances[stop1]:
-                    if self.distances[stop1][stop2] < 222:
+                    if self.distances[stop1][stop2] < 100:
                         busStop_Obj1 = self.bus_stops[stop1]
                         busStop_Obj2 = self.bus_stops[stop2]
                         busStop_Obj1.next_stops["walk"] = busStop_Obj2
@@ -28,11 +28,6 @@ class BusNetwork:
 
         node_list = self.a_star_iterative(closest_bus_stop_to_start, closest_bus_stop_to_end)
 
-        # optimal_route = self.optimize_route(node_list)
-
-        # if optimal_route is not None:
-        #     node_list = optimal_route
-        
         route = []
 
         start_index = 0
@@ -81,6 +76,12 @@ class BusNetwork:
 
                     start_index = index
 
+                    next_stops_wo_walk = self.without_keys(node.next_stops, ['walk'])
+                    if node_list[index+1] not in next_stops_wo_walk.values():
+                        route.append({'bus_service' : 'walk',
+                                      'nodes' : node_list[start_index:index+2]})
+                        start_index = index + 1
+
                     # reset route count dict
                     route_count = {}
                     # include current stop routes to the count
@@ -90,6 +91,9 @@ class BusNetwork:
                     continue
 
         return route
+    
+    def without_keys(self, d, keys):
+        return {x: d[x] for x in d if x not in keys}
     
     def a_star_iterative(self, start_node, end_node):
         open_list = [start_node]
