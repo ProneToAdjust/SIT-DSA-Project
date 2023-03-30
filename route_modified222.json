@@ -1,0 +1,2256 @@
+{
+    "Larkin Terminal": [
+        {
+            "name": "Pejabat Daerah Tanah Johor Bahru",
+            "transport": "P101-loop",
+            "distance": 708.2932602295111
+        },
+        {
+            "name": "Pejabat Daerah Tanah Johor Bahru",
+            "transport": "P211-02",
+            "distance": 708.2932602295111
+        },
+        {
+            "name": "Pejabat Daerah Tanah Johor Bahru",
+            "transport": "P411-02",
+            "distance": 708.2932602295111
+        }
+    ],
+    "Pejabat Daerah Tanah Johor Bahru": [
+        {
+            "name": "RTM Jabatan Penyiaran Negeri Johor",
+            "transport": "P101-loop",
+            "distance": 1397.1651759921895
+        },
+        {
+            "name": "aft Shell Kiosk @ Jalan Tun Abdul Razak",
+            "transport": "P211-02",
+            "distance": 2177.1254070872083
+        },
+        {
+            "name": "aft Shell Kiosk @ Jalan Tun Abdul Razak",
+            "transport": "P411-02",
+            "distance": 2177.1254070872083
+        }
+    ],
+    "RTM Jabatan Penyiaran Negeri Johor": [
+        {
+            "name": "Opp Masjid Kolam Ayer",
+            "transport": "P101-loop",
+            "distance": 1244.0959466816587
+        }
+    ],
+    "Opp Masjid Kolam Ayer": [
+        {
+            "name": "Opp Jabatan Pendidikan Johor",
+            "transport": "P101-loop",
+            "distance": 160.49120328613515
+        },
+        {
+            "name": "Opp Jabatan Pendidikan Johor",
+            "transport": "walk",
+            "distance": 160.49120328613515
+        }
+    ],
+    "Opp Jabatan Pendidikan Johor": [
+        {
+            "name": "Maktab Sultan Abu Bakar (English College",
+            "transport": "P101-loop",
+            "distance": 701.6901022185517
+        },
+        {
+            "name": "Opp Masjid Kolam Ayer",
+            "transport": "walk",
+            "distance": 160.49120328613515
+        }
+    ],
+    "Maktab Sultan Abu Bakar (English College": [
+        {
+            "name": "Hospital Sultanah Aminah",
+            "transport": "P101-loop",
+            "distance": 1218.5847077761252
+        }
+    ],
+    "Hospital Sultanah Aminah": [
+        {
+            "name": "Johor Islamic Complex",
+            "transport": "P101-loop",
+            "distance": 368.30657892764
+        }
+    ],
+    "Johor Islamic Complex": [
+        {
+            "name": "Bangunan Sultan Ibrahim",
+            "transport": "P101-loop",
+            "distance": 1421.7117977869927
+        }
+    ],
+    "Bangunan Sultan Ibrahim": [
+        {
+            "name": "Wisma Persekutuan",
+            "transport": "P101-loop",
+            "distance": 241.23696066701996
+        }
+    ],
+    "Wisma Persekutuan": [
+        {
+            "name": "Majlis Bandaraya Johor Bahru",
+            "transport": "P101-loop",
+            "distance": 853.5488310035386
+        }
+    ],
+    "Majlis Bandaraya Johor Bahru": [
+        {
+            "name": "JB Sentral Terminal",
+            "transport": "P101-loop",
+            "distance": 1338.888150884491
+        },
+        {
+            "name": "JB Sentral Terminal",
+            "transport": "P102-02",
+            "distance": 1338.888150884491
+        }
+    ],
+    "JB Sentral Terminal": [
+        {
+            "name": "Menara MSC Cyberport",
+            "transport": "P101-loop",
+            "distance": 552.7539577072117
+        },
+        {
+            "name": "Menara MSC Cyberport",
+            "transport": "P102-02",
+            "distance": 552.7539577072117
+        }
+    ],
+    "Menara MSC Cyberport": [
+        {
+            "name": "Opp Sekolah Kebangsaan Perempuan Jalan Yahya Awal",
+            "transport": "P101-loop",
+            "distance": 3636.4298849650595
+        },
+        {
+            "name": "Sekolah Menengah Foon Yew",
+            "transport": "P102-02",
+            "distance": 1026.5828936592218
+        }
+    ],
+    "Opp Sekolah Kebangsaan Perempuan Jalan Yahya Awal": [
+        {
+            "name": "Petronas Kiosk @ Jalan Yahya Awal",
+            "transport": "P101-loop",
+            "distance": 296.52549928025155
+        }
+    ],
+    "Petronas Kiosk @ Jalan Yahya Awal": [
+        {
+            "name": "Opp SJK (T) Jalan Yahya Awal",
+            "transport": "P101-loop",
+            "distance": 421.5544952188878
+        }
+    ],
+    "Opp SJK (T) Jalan Yahya Awal": [
+        {
+            "name": "aft Jalan Tasek Utara",
+            "transport": "P101-loop",
+            "distance": 263.03770701243377
+        }
+    ],
+    "aft Jalan Tasek Utara": [
+        {
+            "name": "Opp Yayasan Bandaraya Johor Bahru",
+            "transport": "P101-loop",
+            "distance": 440.0768421435978
+        }
+    ],
+    "Opp Yayasan Bandaraya Johor Bahru": [
+        {
+            "name": "Larkin Terminal",
+            "transport": "P101-loop",
+            "distance": 1213.652732533225
+        }
+    ],
+    "Hub PPR Sri Stulang": [
+        {
+            "name": "bef Jalan Sultanah Aminah",
+            "transport": "P102-01",
+            "distance": 486.5181051254356
+        },
+        {
+            "name": "aft Jalan Pasir Pelangi",
+            "transport": "P106-loop",
+            "distance": 588.8048110940115
+        },
+        {
+            "name": "PPR Sri Stulang",
+            "transport": "walk",
+            "distance": 182.82700248136183
+        }
+    ],
+    "bef Jalan Sultanah Aminah": [
+        {
+            "name": "Shell Kiosk @ Jalan Pasir Pelangi",
+            "transport": "P102-01",
+            "distance": 226.21637723300694
+        }
+    ],
+    "Shell Kiosk @ Jalan Pasir Pelangi": [
+        {
+            "name": "Stulang Walk",
+            "transport": "P102-01",
+            "distance": 2253.5615028803572
+        }
+    ],
+    "Stulang Walk": [
+        {
+            "name": "Block 18",
+            "transport": "P102-01",
+            "distance": 329.98419792608496
+        },
+        {
+            "name": "Sekolah Menengah Foon Yew",
+            "transport": "walk",
+            "distance": 147.74202444415502
+        }
+    ],
+    "Block 18": [
+        {
+            "name": "Opp De' Stulang",
+            "transport": "P102-01",
+            "distance": 112.66016855159603
+        },
+        {
+            "name": "Opp De' Stulang",
+            "transport": "walk",
+            "distance": 112.66016855159603
+        },
+        {
+            "name": "De' Stulang",
+            "transport": "walk",
+            "distance": 112.66044532311722
+        }
+    ],
+    "Opp De' Stulang": [
+        {
+            "name": "Opp Sekolah Menengah Foon Yew",
+            "transport": "P102-01",
+            "distance": 404.2019652577615
+        },
+        {
+            "name": "Block 18",
+            "transport": "walk",
+            "distance": 112.66016855159602
+        },
+        {
+            "name": "De' Stulang",
+            "transport": "walk",
+            "distance": 8.644775147961798
+        }
+    ],
+    "Opp Sekolah Menengah Foon Yew": [
+        {
+            "name": "R&F Mall",
+            "transport": "P102-01",
+            "distance": 1322.4349983121517
+        },
+        {
+            "name": "Sekolah Menengah Foon Yew",
+            "transport": "walk",
+            "distance": 74.40092973737958
+        }
+    ],
+    "R&F Mall": [
+        {
+            "name": "Majlis Bandaraya Johor Bahru",
+            "transport": "P102-01",
+            "distance": 1083.8027724173185
+        }
+    ],
+    "Sekolah Menengah Foon Yew": [
+        {
+            "name": "De' Stulang",
+            "transport": "P102-02",
+            "distance": 374.79373351473714
+        },
+        {
+            "name": "Stulang Walk",
+            "transport": "walk",
+            "distance": 147.74202444415502
+        },
+        {
+            "name": "Opp Sekolah Menengah Foon Yew",
+            "transport": "walk",
+            "distance": 74.40092973737958
+        }
+    ],
+    "De' Stulang": [
+        {
+            "name": "Opp Istana Pasir Pelangi",
+            "transport": "P102-02",
+            "distance": 304.85323015250003
+        },
+        {
+            "name": "Block 18",
+            "transport": "walk",
+            "distance": 112.66044532311722
+        },
+        {
+            "name": "Opp De' Stulang",
+            "transport": "walk",
+            "distance": 8.644775147961798
+        }
+    ],
+    "Opp Istana Pasir Pelangi": [
+        {
+            "name": "The Mall, Mid Valley Southkey",
+            "transport": "P102-02",
+            "distance": 1518.4454046709438
+        }
+    ],
+    "The Mall, Mid Valley Southkey": [
+        {
+            "name": "aft Jalan Pasir Pelangi",
+            "transport": "P102-02",
+            "distance": 1388.1584085793916
+        }
+    ],
+    "aft Jalan Pasir Pelangi": [
+        {
+            "name": "Petronas Kiosk @ Taman Bayu Puteri",
+            "transport": "P102-02",
+            "distance": 562.1597029100407
+        },
+        {
+            "name": "Petronas Kiosk @ Taman Bayu Puteri",
+            "transport": "P106-loop",
+            "distance": 562.1597029100407
+        },
+        {
+            "name": "AEON Permas Jaya",
+            "transport": "walk",
+            "distance": 150.69708232840108
+        }
+    ],
+    "Petronas Kiosk @ Taman Bayu Puteri": [
+        {
+            "name": "Opp Petronas Kiosk @ Taman Bayu Puteri",
+            "transport": "P102-02",
+            "distance": 91.73304903051203
+        },
+        {
+            "name": "BHPetrol Kiosk @ Permas Jaya",
+            "transport": "P106-loop",
+            "distance": 1348.6794094317747
+        },
+        {
+            "name": "Opp Petronas Kiosk @ Taman Bayu Puteri",
+            "transport": "walk",
+            "distance": 91.73304903051203
+        },
+        {
+            "name": "PPR Sri Stulang",
+            "transport": "walk",
+            "distance": 64.11571694568045
+        }
+    ],
+    "Opp Petronas Kiosk @ Taman Bayu Puteri": [
+        {
+            "name": "PPR Sri Stulang",
+            "transport": "P102-02",
+            "distance": 186.38123801096984
+        },
+        {
+            "name": "PPR Sri Stulang",
+            "transport": "P106-loop",
+            "distance": 186.38123801096984
+        },
+        {
+            "name": "PPR Sri Stulang",
+            "transport": "walk",
+            "distance": 186.38123801096984
+        },
+        {
+            "name": "Petronas Kiosk @ Taman Bayu Puteri",
+            "transport": "walk",
+            "distance": 91.73304903051205
+        }
+    ],
+    "PPR Sri Stulang": [
+        {
+            "name": "Hub PPR Sri Stulang",
+            "transport": "P102-02",
+            "distance": 182.82700248136183
+        },
+        {
+            "name": "Hub PPR Sri Stulang",
+            "transport": "P106-loop",
+            "distance": 182.82700248136183
+        },
+        {
+            "name": "Hub PPR Sri Stulang",
+            "transport": "walk",
+            "distance": 182.82700248136183
+        },
+        {
+            "name": "Petronas Kiosk @ Taman Bayu Puteri",
+            "transport": "walk",
+            "distance": 64.11571694568045
+        },
+        {
+            "name": "Opp Petronas Kiosk @ Taman Bayu Puteri",
+            "transport": "walk",
+            "distance": 186.38123801096984
+        }
+    ],
+    "BHPetrol Kiosk @ Permas Jaya": [
+        {
+            "name": "AEON Permas Jaya",
+            "transport": "P106-loop",
+            "distance": 964.7428462607082
+        },
+        {
+            "name": "aft Jalan Masai Baru",
+            "transport": "walk",
+            "distance": 140.85254479885577
+        },
+        {
+            "name": "bef Jalan Masai Baru",
+            "transport": "walk",
+            "distance": 199.77912611179147
+        },
+        {
+            "name": "Opp BHPetrol Kiosk @ Permas Jaya",
+            "transport": "walk",
+            "distance": 147.00809102657763
+        }
+    ],
+    "AEON Permas Jaya": [
+        {
+            "name": "Dewan Serbaguna Permas Jaya",
+            "transport": "P106-loop",
+            "distance": 651.3379777933588
+        },
+        {
+            "name": "aft Jalan Pasir Pelangi",
+            "transport": "walk",
+            "distance": 150.69708232840108
+        }
+    ],
+    "Dewan Serbaguna Permas Jaya": [
+        {
+            "name": "Mon Glori Apartment",
+            "transport": "P106-loop",
+            "distance": 282.13390267412314
+        }
+    ],
+    "Mon Glori Apartment": [
+        {
+            "name": "Opp Best Ku Motor",
+            "transport": "P106-loop",
+            "distance": 2518.573090077637
+        },
+        {
+            "name": "Pan Vista",
+            "transport": "walk",
+            "distance": 0.22700000649606095
+        },
+        {
+            "name": "Sekolah Kebangsaan Taman Permas Jaya 3",
+            "transport": "walk",
+            "distance": 192.00076666048642
+        }
+    ],
+    "Opp Best Ku Motor": [
+        {
+            "name": "Opp Kia Motors",
+            "transport": "P106-loop",
+            "distance": 750.8407017440647
+        },
+        {
+            "name": "Lotus Plentong (Tesco Extra)",
+            "transport": "walk",
+            "distance": 45.37686647342617
+        },
+        {
+            "name": "Best Ku Motor",
+            "transport": "walk",
+            "distance": 22.044789005929744
+        }
+    ],
+    "Opp Kia Motors": [
+        {
+            "name": "bef Jalan Masai Baru",
+            "transport": "P106-loop",
+            "distance": 490.28036241628934
+        },
+        {
+            "name": "Giant Plentong",
+            "transport": "walk",
+            "distance": 214.53085823292034
+        },
+        {
+            "name": "Kia Motors",
+            "transport": "walk",
+            "distance": 50.30211395654653
+        }
+    ],
+    "bef Jalan Masai Baru": [
+        {
+            "name": "Lotus Plentong (Tesco Extra)",
+            "transport": "P106-loop",
+            "distance": 397.78755216838545
+        },
+        {
+            "name": "BHPetrol Kiosk @ Permas Jaya",
+            "transport": "walk",
+            "distance": 199.77912611179147
+        },
+        {
+            "name": "aft Jalan Masai Baru",
+            "transport": "walk",
+            "distance": 44.70807011358744
+        },
+        {
+            "name": "Opp BHPetrol Kiosk @ Permas Jaya",
+            "transport": "walk",
+            "distance": 134.89619698658225
+        }
+    ],
+    "Lotus Plentong (Tesco Extra)": [
+        {
+            "name": "aft Jalan Masai Baru",
+            "transport": "P106-loop",
+            "distance": 423.60888707198444
+        },
+        {
+            "name": "Opp Best Ku Motor",
+            "transport": "walk",
+            "distance": 45.37686647342617
+        }
+    ],
+    "aft Jalan Masai Baru": [
+        {
+            "name": "Giant Plentong",
+            "transport": "P106-loop",
+            "distance": 627.9757734258413
+        },
+        {
+            "name": "BHPetrol Kiosk @ Permas Jaya",
+            "transport": "walk",
+            "distance": 140.85254479885577
+        },
+        {
+            "name": "bef Jalan Masai Baru",
+            "transport": "walk",
+            "distance": 44.70807011358744
+        }
+    ],
+    "Giant Plentong": [
+        {
+            "name": "Hse No. 1 Jalan Seroja 22",
+            "transport": "P106-loop",
+            "distance": 332.82551986037834
+        },
+        {
+            "name": "Opp Kia Motors",
+            "transport": "walk",
+            "distance": 214.5308582329203
+        }
+    ],
+    "Hse No. 1 Jalan Seroja 22": [
+        {
+            "name": "Opp Jalan Keembong 43",
+            "transport": "P106-loop",
+            "distance": 1079.8558458276855
+        }
+    ],
+    "Opp Jalan Keembong 43": [
+        {
+            "name": "Jalan Seroja 54",
+            "transport": "P106-loop",
+            "distance": 777.3956152647229
+        },
+        {
+            "name": "Opp Suntoyo Enterprise",
+            "transport": "walk",
+            "distance": 175.9175284197619
+        }
+    ],
+    "Jalan Seroja 54": [
+        {
+            "name": "Jalan Bakawali 86",
+            "transport": "P106-loop",
+            "distance": 173.53648050150605
+        },
+        {
+            "name": "Jalan Bakawali 86",
+            "transport": "walk",
+            "distance": 173.53648050150605
+        }
+    ],
+    "Jalan Bakawali 86": [
+        {
+            "name": "Opp Pasar Awam Johor Jaya",
+            "transport": "P106-loop",
+            "distance": 554.2113958786781
+        },
+        {
+            "name": "Jalan Seroja 54",
+            "transport": "walk",
+            "distance": 173.53648050150605
+        }
+    ],
+    "Opp Pasar Awam Johor Jaya": [
+        {
+            "name": "AEON Tebrau City",
+            "transport": "P106-loop",
+            "distance": 821.6957792518548
+        }
+    ],
+    "AEON Tebrau City": [
+        {
+            "name": "Hospital Sultan Ismail",
+            "transport": "P106-loop",
+            "distance": 988.1951589977247
+        }
+    ],
+    "Hospital Sultan Ismail": [
+        {
+            "name": "Hospital Sultan Ismail 2",
+            "transport": "P106-loop",
+            "distance": 561.0032762223934
+        }
+    ],
+    "Hospital Sultan Ismail 2": [
+        {
+            "name": "Opp Suntoyo Enterprise",
+            "transport": "P106-loop",
+            "distance": 2732.0476401201645
+        }
+    ],
+    "Opp Suntoyo Enterprise": [
+        {
+            "name": "Kia Motors",
+            "transport": "P106-loop",
+            "distance": 1914.5043672728154
+        },
+        {
+            "name": "Opp Jalan Keembong 43",
+            "transport": "walk",
+            "distance": 175.9175284197619
+        }
+    ],
+    "Kia Motors": [
+        {
+            "name": "Best Ku Motor",
+            "transport": "P106-loop",
+            "distance": 729.2263628003943
+        },
+        {
+            "name": "Opp Kia Motors",
+            "transport": "walk",
+            "distance": 50.30211395654653
+        }
+    ],
+    "Best Ku Motor": [
+        {
+            "name": "House No. 63 Jalan Permas 1/1",
+            "transport": "P106-loop",
+            "distance": 715.0238223902777
+        },
+        {
+            "name": "Opp Best Ku Motor",
+            "transport": "walk",
+            "distance": 22.044789005929744
+        }
+    ],
+    "House No. 63 Jalan Permas 1/1": [
+        {
+            "name": "Jalan Permas 5/6",
+            "transport": "P106-loop",
+            "distance": 1233.6409487918158
+        }
+    ],
+    "Jalan Permas 5/6": [
+        {
+            "name": "Sekolah Kebangsaan Taman Permas Jaya 3",
+            "transport": "P106-loop",
+            "distance": 614.4185019733602
+        }
+    ],
+    "Sekolah Kebangsaan Taman Permas Jaya 3": [
+        {
+            "name": "Pan Vista",
+            "transport": "P106-loop",
+            "distance": 192.14360507760486
+        },
+        {
+            "name": "Mon Glori Apartment",
+            "transport": "walk",
+            "distance": 192.00076666048642
+        },
+        {
+            "name": "Pan Vista",
+            "transport": "walk",
+            "distance": 192.14360507760486
+        }
+    ],
+    "Pan Vista": [
+        {
+            "name": "aft Jalan Permas 8/14",
+            "transport": "P106-loop",
+            "distance": 409.59434709917264
+        },
+        {
+            "name": "Mon Glori Apartment",
+            "transport": "walk",
+            "distance": 0.22700000649606095
+        },
+        {
+            "name": "Sekolah Kebangsaan Taman Permas Jaya 3",
+            "transport": "walk",
+            "distance": 192.14360507760486
+        }
+    ],
+    "aft Jalan Permas 8/14": [
+        {
+            "name": "Opp BHPetrol Kiosk @ Permas Jaya",
+            "transport": "P106-loop",
+            "distance": 2059.9344508683103
+        }
+    ],
+    "Opp BHPetrol Kiosk @ Permas Jaya": [
+        {
+            "name": "bef Shell Kiosk @ Permas Jaya",
+            "transport": "P106-loop",
+            "distance": 911.5661015662004
+        },
+        {
+            "name": "bef Jalan Masai Baru",
+            "transport": "walk",
+            "distance": 134.89619698658225
+        },
+        {
+            "name": "BHPetrol Kiosk @ Permas Jaya",
+            "transport": "walk",
+            "distance": 147.00809102657763
+        }
+    ],
+    "bef Shell Kiosk @ Permas Jaya": [
+        {
+            "name": "Opp Petronas Kiosk @ Taman Bayu Puteri",
+            "transport": "P106-loop",
+            "distance": 1027.0238747083324
+        }
+    ],
+    "Taman Universiti Terminal": [
+        {
+            "name": "opp Sekolah Kebangsaan Taman Universiti 4",
+            "transport": "P202-loop",
+            "distance": 726.0936947435472
+        },
+        {
+            "name": "Aeon Taman Universiti",
+            "transport": "P211-01",
+            "distance": 520.979846359198
+        }
+    ],
+    "opp Sekolah Kebangsaan Taman Universiti 4": [
+        {
+            "name": "Surau As Syakirin",
+            "transport": "P202-loop",
+            "distance": 620.1806576380002
+        },
+        {
+            "name": "Sekolah Kebangsaan Taman Universiti 4",
+            "transport": "walk",
+            "distance": 17.266437260455323
+        },
+        {
+            "name": "Jalan Kebudayaan 27 / 24 Intersection",
+            "transport": "walk",
+            "distance": 197.35383106929044
+        }
+    ],
+    "Surau As Syakirin": [
+        {
+            "name": "Opp SMK Taman Mutiara Rini",
+            "transport": "P202-loop",
+            "distance": 903.2676107364372
+        },
+        {
+            "name": "Opp Surau As Syakirin",
+            "transport": "walk",
+            "distance": 36.4191988831832
+        }
+    ],
+    "Opp SMK Taman Mutiara Rini": [
+        {
+            "name": "Opp Jalan Utama 34",
+            "transport": "P202-loop",
+            "distance": 451.90090009947846
+        }
+    ],
+    "Opp Jalan Utama 34": [
+        {
+            "name": "Opp Hutan Bandar MBIP",
+            "transport": "P202-loop",
+            "distance": 1128.3134835044048
+        }
+    ],
+    "Opp Hutan Bandar MBIP": [
+        {
+            "name": "Shop No. 81 Jalan Seri Orkid 17",
+            "transport": "P202-loop",
+            "distance": 1155.8284894160158
+        },
+        {
+            "name": "UTM Fakulti Alam Bina",
+            "transport": "walk",
+            "distance": 170.91931395773406
+        }
+    ],
+    "Shop No. 81 Jalan Seri Orkid 17": [
+        {
+            "name": "Opp Bahagian Teknologi Pendidikan Negeri Johor",
+            "transport": "P202-loop",
+            "distance": 1130.6784200228144
+        }
+    ],
+    "Opp Bahagian Teknologi Pendidikan Negeri Johor": [
+        {
+            "name": "Union Inn",
+            "transport": "P202-loop",
+            "distance": 989.5261700932061
+        }
+    ],
+    "Union Inn": [
+        {
+            "name": "Shophouses @ Jalan Nakhoda 2",
+            "transport": "P202-loop",
+            "distance": 508.09465794172274
+        },
+        {
+            "name": "Shell Kiosk @ Taman Sri Putri",
+            "transport": "walk",
+            "distance": 184.48578569985042
+        }
+    ],
+    "Shophouses @ Jalan Nakhoda 2": [
+        {
+            "name": "bef Terminal TUTA",
+            "transport": "P202-loop",
+            "distance": 279.46308724207313
+        }
+    ],
+    "bef Terminal TUTA": [
+        {
+            "name": "Polilkinik Yap",
+            "transport": "P202-loop",
+            "distance": 446.69965699068365
+        }
+    ],
+    "Polilkinik Yap": [
+        {
+            "name": "bef Jalan Tun Teja",
+            "transport": "P202-loop",
+            "distance": 270.33802211358585
+        }
+    ],
+    "bef Jalan Tun Teja": [
+        {
+            "name": "Shophouses @ Jalan Perwira 9",
+            "transport": "P202-loop",
+            "distance": 96.1087487937104
+        },
+        {
+            "name": "Shophouses @ Jalan Perwira 9",
+            "transport": "walk",
+            "distance": 96.1087487937104
+        }
+    ],
+    "Shophouses @ Jalan Perwira 9": [
+        {
+            "name": "Sin Kok Soon Motor (JB) Sdn Bhd",
+            "transport": "P202-loop",
+            "distance": 223.99163297457096
+        },
+        {
+            "name": "bef Jalan Tun Teja",
+            "transport": "walk",
+            "distance": 96.1087487937104
+        },
+        {
+            "name": "aft Jalan Patin",
+            "transport": "walk",
+            "distance": 153.15527235494716
+        },
+        {
+            "name": "SJK (C) Kuo Kuang",
+            "transport": "walk",
+            "distance": 171.83742158008536
+        }
+    ],
+    "Sin Kok Soon Motor (JB) Sdn Bhd": [
+        {
+            "name": "aft Jalan Patin",
+            "transport": "P202-loop",
+            "distance": 490.89998819630387
+        }
+    ],
+    "aft Jalan Patin": [
+        {
+            "name": "SJK(C) Pu Sze",
+            "transport": "P202-loop",
+            "distance": 223.38488787518756
+        },
+        {
+            "name": "SJK(C) Pu Sze",
+            "transport": "P211-02",
+            "distance": 223.38488787518756
+        },
+        {
+            "name": "SJK(C) Pu Sze",
+            "transport": "P411-02",
+            "distance": 223.38488787518756
+        },
+        {
+            "name": "SJK(C) Pu Sze",
+            "transport": "P403-loop",
+            "distance": 223.38488787518756
+        },
+        {
+            "name": "Shophouses @ Jalan Perwira 9",
+            "transport": "walk",
+            "distance": 153.15527235494716
+        }
+    ],
+    "SJK(C) Pu Sze": [
+        {
+            "name": "aft Shell Kiosk - Skudai",
+            "transport": "P202-loop",
+            "distance": 483.27498445407997
+        },
+        {
+            "name": "aft Shell Kiosk - Skudai",
+            "transport": "P211-02",
+            "distance": 483.27498445407997
+        },
+        {
+            "name": "aft Shell Kiosk - Skudai",
+            "transport": "P411-02",
+            "distance": 483.27498445407997
+        },
+        {
+            "name": "aft Shell Kiosk - Skudai",
+            "transport": "P403-loop",
+            "distance": 483.27498445407997
+        }
+    ],
+    "aft Shell Kiosk - Skudai": [
+        {
+            "name": "Shell Kiosk @ Taman Sri Putri",
+            "transport": "P202-loop",
+            "distance": 721.5445155355679
+        },
+        {
+            "name": "Shell Kiosk @ Taman Sri Putri",
+            "transport": "P211-02",
+            "distance": 721.5445155355679
+        },
+        {
+            "name": "Shell Kiosk @ Taman Sri Putri",
+            "transport": "P411-02",
+            "distance": 721.5445155355679
+        },
+        {
+            "name": "Shell Kiosk @ Taman Sri Putri",
+            "transport": "P403-loop",
+            "distance": 721.5445155355679
+        }
+    ],
+    "Shell Kiosk @ Taman Sri Putri": [
+        {
+            "name": "Masjid Abidin",
+            "transport": "P202-loop",
+            "distance": 1199.2322878210766
+        },
+        {
+            "name": "aft Jalan Sri Skudai",
+            "transport": "P211-02",
+            "distance": 1179.3067956729844
+        },
+        {
+            "name": "aft Tenaga Nasional Bhd Substation",
+            "transport": "P411-02",
+            "distance": 365.16830559195097
+        },
+        {
+            "name": "aft Tenaga Nasional Bhd Substation",
+            "transport": "P403-loop",
+            "distance": 365.16830559195097
+        },
+        {
+            "name": "Union Inn",
+            "transport": "walk",
+            "distance": 184.48578569985042
+        },
+        {
+            "name": "bef Jalan Hamoni 14",
+            "transport": "walk",
+            "distance": 197.26543922332866
+        },
+        {
+            "name": "Opp Shell Kiosk @ Taman Sri Putri",
+            "transport": "walk",
+            "distance": 148.57979429605152
+        }
+    ],
+    "Masjid Abidin": [
+        {
+            "name": "Shophouses along Jalan Tembaga Kuning 4",
+            "transport": "P202-loop",
+            "distance": 299.9968576212525
+        }
+    ],
+    "Shophouses along Jalan Tembaga Kuning 4": [
+        {
+            "name": "Shophouses @ Jalan Suasa 1",
+            "transport": "P202-loop",
+            "distance": 623.7888983003463
+        },
+        {
+            "name": "bef Jalan Hamoni 14",
+            "transport": "walk",
+            "distance": 197.26543922332866
+        },
+        {
+            "name": "Opp Shell Kiosk @ Taman Sri Putri",
+            "transport": "walk",
+            "distance": 168.8855784400544
+        }
+    ],
+    "Shophouses @ Jalan Suasa 1": [
+        {
+            "name": "bef Jalan Hamoni 14",
+            "transport": "P202-loop",
+            "distance": 1129.8322609074746
+        },
+        {
+            "name": "UTM Fakulti Alam Bina",
+            "transport": "P211-02",
+            "distance": 3776.2188880286762
+        }
+    ],
+    "bef Jalan Hamoni 14": [
+        {
+            "name": "Opp Apartment Pasti Asli",
+            "transport": "P202-loop",
+            "distance": 486.01341236997763
+        },
+        {
+            "name": "Shell Kiosk @ Taman Sri Putri",
+            "transport": "walk",
+            "distance": 197.26543922332868
+        },
+        {
+            "name": "Shophouses along Jalan Tembaga Kuning 4",
+            "transport": "walk",
+            "distance": 197.26543922332868
+        },
+        {
+            "name": "UTM Rumah Alumni",
+            "transport": "walk",
+            "distance": 126.90263459497028
+        }
+    ],
+    "Opp Apartment Pasti Asli": [
+        {
+            "name": "Opp Surau As Syakirin",
+            "transport": "P202-loop",
+            "distance": 1914.1495777927785
+        }
+    ],
+    "Opp Surau As Syakirin": [
+        {
+            "name": "Sekolah Kebangsaan Taman Universiti 4",
+            "transport": "P202-loop",
+            "distance": 672.3430570411749
+        },
+        {
+            "name": "Surau As Syakirin",
+            "transport": "walk",
+            "distance": 36.4191988831832
+        }
+    ],
+    "Sekolah Kebangsaan Taman Universiti 4": [
+        {
+            "name": "Jalan Kebudayaan 27 / 24 Intersection",
+            "transport": "P202-loop",
+            "distance": 184.64131238025726
+        },
+        {
+            "name": "opp Sekolah Kebangsaan Taman Universiti 4",
+            "transport": "walk",
+            "distance": 17.266437260455323
+        },
+        {
+            "name": "Jalan Kebudayaan 27 / 24 Intersection",
+            "transport": "walk",
+            "distance": 184.64131238025726
+        }
+    ],
+    "Jalan Kebudayaan 27 / 24 Intersection": [
+        {
+            "name": "Taman Universiti Terminal",
+            "transport": "P202-loop",
+            "distance": 533.2284054397052
+        },
+        {
+            "name": "opp Sekolah Kebangsaan Taman Universiti 4",
+            "transport": "walk",
+            "distance": 197.35383106929044
+        },
+        {
+            "name": "Sekolah Kebangsaan Taman Universiti 4",
+            "transport": "walk",
+            "distance": 184.6413123802573
+        }
+    ],
+    "Aeon Taman Universiti": [
+        {
+            "name": "UTM Fakulti Alam Bina",
+            "transport": "P211-01",
+            "distance": 2517.8825596490938
+        },
+        {
+            "name": "Opp AEON Taman Universiti",
+            "transport": "walk",
+            "distance": 51.07124185833334
+        }
+    ],
+    "UTM Fakulti Alam Bina": [
+        {
+            "name": "Opp Block D10",
+            "transport": "P211-01",
+            "distance": 379.4381284205583
+        },
+        {
+            "name": "Opp Block D10",
+            "transport": "P211-02",
+            "distance": 379.4381284205583
+        },
+        {
+            "name": "Opp Hutan Bandar MBIP",
+            "transport": "walk",
+            "distance": 170.91931395773406
+        }
+    ],
+    "Opp Block D10": [
+        {
+            "name": "Opp C.I.C.T.",
+            "transport": "P211-01",
+            "distance": 299.9185427356293
+        },
+        {
+            "name": "Opp C.I.C.T.",
+            "transport": "P211-02",
+            "distance": 299.9185427356293
+        }
+    ],
+    "Opp C.I.C.T.": [
+        {
+            "name": "Block P07 - Fakulti Kejuruteraan Elektrik",
+            "transport": "P211-01",
+            "distance": 394.71270106984224
+        },
+        {
+            "name": "Block P07 - Fakulti Kejuruteraan Elektrik",
+            "transport": "P211-02",
+            "distance": 394.71270106984224
+        }
+    ],
+    "Block P07 - Fakulti Kejuruteraan Elektrik": [
+        {
+            "name": "aft Block P19A - Fakulti Kejuruteraan Elektrik",
+            "transport": "P211-01",
+            "distance": 345.0129297538322
+        },
+        {
+            "name": "aft Block P19A - Fakulti Kejuruteraan Elektrik",
+            "transport": "P211-02",
+            "distance": 345.0129297538322
+        }
+    ],
+    "aft Block P19A - Fakulti Kejuruteraan Elektrik": [
+        {
+            "name": "UTM Equine Park",
+            "transport": "P211-01",
+            "distance": 107.78255021357128
+        },
+        {
+            "name": "bef UTM Main Gate",
+            "transport": "P211-02",
+            "distance": 300.72495196180137
+        },
+        {
+            "name": "UTM Equine Park",
+            "transport": "walk",
+            "distance": 107.78255021357128
+        }
+    ],
+    "UTM Equine Park": [
+        {
+            "name": "UTM Rumah Alumni",
+            "transport": "P211-01",
+            "distance": 334.9761862296787
+        },
+        {
+            "name": "aft Block P19A - Fakulti Kejuruteraan Elektrik",
+            "transport": "walk",
+            "distance": 107.78255021357128
+        }
+    ],
+    "UTM Rumah Alumni": [
+        {
+            "name": "Opp Shell Kiosk @ Taman Sri Putri",
+            "transport": "P211-01",
+            "distance": 2341.70483046011
+        },
+        {
+            "name": "bef Jalan Hamoni 14",
+            "transport": "walk",
+            "distance": 126.90263459497027
+        },
+        {
+            "name": "aft Tenaga Nasional Bhd Substation",
+            "transport": "walk",
+            "distance": 77.0496636247238
+        }
+    ],
+    "Opp Shell Kiosk @ Taman Sri Putri": [
+        {
+            "name": "Skudai Parade",
+            "transport": "P211-01",
+            "distance": 413.5256820805027
+        },
+        {
+            "name": "Skudai Parade",
+            "transport": "P411-01",
+            "distance": 413.5256820805027
+        },
+        {
+            "name": "Skudai Parade",
+            "transport": "P403-loop",
+            "distance": 413.5256820805027
+        },
+        {
+            "name": "Shell Kiosk @ Taman Sri Putri",
+            "transport": "walk",
+            "distance": 148.57979429605152
+        },
+        {
+            "name": "Shophouses along Jalan Tembaga Kuning 4",
+            "transport": "walk",
+            "distance": 168.88557844005436
+        }
+    ],
+    "Skudai Parade": [
+        {
+            "name": "Opp SJK (C) Kuo Kuang",
+            "transport": "P211-01",
+            "distance": 2106.160574058678
+        },
+        {
+            "name": "Opp SJK (C) Kuo Kuang",
+            "transport": "P411-01",
+            "distance": 2106.160574058678
+        },
+        {
+            "name": "aft Jalan Patin",
+            "transport": "P403-loop",
+            "distance": 1147.6481276565694
+        }
+    ],
+    "Opp SJK (C) Kuo Kuang": [
+        {
+            "name": "bef Paradigm Mall",
+            "transport": "P211-01",
+            "distance": 1628.8861613672952
+        },
+        {
+            "name": "bef Paradigm Mall",
+            "transport": "P411-01",
+            "distance": 1628.8861613672952
+        },
+        {
+            "name": "SJK (C) Kuo Kuang",
+            "transport": "walk",
+            "distance": 59.22119507324554
+        }
+    ],
+    "bef Paradigm Mall": [
+        {
+            "name": "Paradigm Mall",
+            "transport": "P211-01",
+            "distance": 610.5835627317821
+        },
+        {
+            "name": "Paradigm Mall",
+            "transport": "P411-01",
+            "distance": 610.5835627317821
+        }
+    ],
+    "Paradigm Mall": [
+        {
+            "name": "Opp Saksama Otomobil",
+            "transport": "P211-01",
+            "distance": 365.53883696776984
+        },
+        {
+            "name": "Opp Saksama Otomobil",
+            "transport": "P411-01",
+            "distance": 365.53883696776984
+        }
+    ],
+    "Opp Saksama Otomobil": [
+        {
+            "name": "Opp Petron Kiosk @ Taman Tampoi Indah",
+            "transport": "P211-01",
+            "distance": 439.8249696522896
+        },
+        {
+            "name": "Opp Petron Kiosk @ Taman Tampoi Indah",
+            "transport": "P411-01",
+            "distance": 439.8249696522896
+        }
+    ],
+    "Opp Petron Kiosk @ Taman Tampoi Indah": [
+        {
+            "name": "Kompleks Pekan Rabu Johor Bahru",
+            "transport": "P211-01",
+            "distance": 1275.1628099809016
+        },
+        {
+            "name": "Kompleks Pekan Rabu Johor Bahru",
+            "transport": "P411-01",
+            "distance": 1275.1628099809016
+        },
+        {
+            "name": "bef KIP Mart",
+            "transport": "walk",
+            "distance": 75.99351086714488
+        }
+    ],
+    "Kompleks Pekan Rabu Johor Bahru": [
+        {
+            "name": "Giant Tampoi",
+            "transport": "P211-01",
+            "distance": 389.25397526699834
+        },
+        {
+            "name": "Giant Tampoi",
+            "transport": "P411-01",
+            "distance": 389.25397526699834
+        },
+        {
+            "name": "Opp Pulai View Condo",
+            "transport": "walk",
+            "distance": 75.56426810488914
+        }
+    ],
+    "Giant Tampoi": [
+        {
+            "name": "aft Lorong Betik",
+            "transport": "P211-01",
+            "distance": 439.1260896079339
+        },
+        {
+            "name": "aft Lorong Betik",
+            "transport": "P411-01",
+            "distance": 439.1260896079339
+        },
+        {
+            "name": "SK Kampung Pasir",
+            "transport": "walk",
+            "distance": 83.3629296526263
+        }
+    ],
+    "aft Lorong Betik": [
+        {
+            "name": "Batu 5 Johor Street Market",
+            "transport": "P211-01",
+            "distance": 234.49281542507347
+        },
+        {
+            "name": "Batu 5 Johor Street Market",
+            "transport": "P411-01",
+            "distance": 234.49281542507347
+        }
+    ],
+    "Batu 5 Johor Street Market": [
+        {
+            "name": "Plaza Angsana",
+            "transport": "P211-01",
+            "distance": 688.761338353086
+        },
+        {
+            "name": "Plaza Angsana",
+            "transport": "P411-01",
+            "distance": 688.761338353086
+        }
+    ],
+    "Plaza Angsana": [
+        {
+            "name": "Klinik Utama @ Jalan Padi 1",
+            "transport": "P211-01",
+            "distance": 881.8807813987898
+        },
+        {
+            "name": "Klinik Utama @ Jalan Padi 1",
+            "transport": "P411-01",
+            "distance": 881.8807813987898
+        }
+    ],
+    "Klinik Utama @ Jalan Padi 1": [
+        {
+            "name": "Opp Amitabha Centre",
+            "transport": "P211-01",
+            "distance": 615.2681184835122
+        },
+        {
+            "name": "Opp Amitabha Centre",
+            "transport": "P411-01",
+            "distance": 615.2681184835122
+        },
+        {
+            "name": "CIMB Bank",
+            "transport": "walk",
+            "distance": 66.8419335971252
+        }
+    ],
+    "Opp Amitabha Centre": [
+        {
+            "name": "Opp Shell Kiosk @ Jalan Tun Abdul Razak",
+            "transport": "P211-01",
+            "distance": 459.28985056140687
+        },
+        {
+            "name": "Opp Shell Kiosk @ Jalan Tun Abdul Razak",
+            "transport": "P411-01",
+            "distance": 459.28985056140687
+        },
+        {
+            "name": "Amitabha Centre",
+            "transport": "walk",
+            "distance": 38.6685520307278
+        }
+    ],
+    "Opp Shell Kiosk @ Jalan Tun Abdul Razak": [
+        {
+            "name": "Larkin Terminal",
+            "transport": "P211-01",
+            "distance": 2547.770043970006
+        },
+        {
+            "name": "Larkin Terminal",
+            "transport": "P411-01",
+            "distance": 2547.770043970006
+        },
+        {
+            "name": "aft Shell Kiosk @ Jalan Tun Abdul Razak",
+            "transport": "walk",
+            "distance": 31.84111413112988
+        }
+    ],
+    "aft Shell Kiosk @ Jalan Tun Abdul Razak": [
+        {
+            "name": "Amitabha Centre",
+            "transport": "P211-02",
+            "distance": 416.9863498764027
+        },
+        {
+            "name": "Amitabha Centre",
+            "transport": "P411-02",
+            "distance": 416.9863498764027
+        },
+        {
+            "name": "Opp Shell Kiosk @ Jalan Tun Abdul Razak",
+            "transport": "walk",
+            "distance": 31.84111413112988
+        }
+    ],
+    "Amitabha Centre": [
+        {
+            "name": "CIMB Bank",
+            "transport": "P211-02",
+            "distance": 565.9639847765774
+        },
+        {
+            "name": "CIMB Bank",
+            "transport": "P411-02",
+            "distance": 565.9639847765774
+        },
+        {
+            "name": "Opp Amitabha Centre",
+            "transport": "walk",
+            "distance": 38.6685520307278
+        }
+    ],
+    "CIMB Bank": [
+        {
+            "name": "Klinik Kesihatan Tampoi",
+            "transport": "P211-02",
+            "distance": 719.906781328538
+        },
+        {
+            "name": "Klinik Kesihatan Tampoi",
+            "transport": "P411-02",
+            "distance": 719.906781328538
+        },
+        {
+            "name": "Klinik Utama @ Jalan Padi 1",
+            "transport": "walk",
+            "distance": 66.8419335971252
+        }
+    ],
+    "Klinik Kesihatan Tampoi": [
+        {
+            "name": "bef Shell Kiosk @ Kampung Pasir",
+            "transport": "P211-02",
+            "distance": 1.8135590627092644
+        },
+        {
+            "name": "bef Shell Kiosk @ Kampung Pasir",
+            "transport": "P411-02",
+            "distance": 1.8135590627092644
+        },
+        {
+            "name": "bef Shell Kiosk @ Kampung Pasir",
+            "transport": "walk",
+            "distance": 1.8135590627092644
+        }
+    ],
+    "bef Shell Kiosk @ Kampung Pasir": [
+        {
+            "name": "SK Kampung Pasir",
+            "transport": "P211-02",
+            "distance": 1240.1102188566872
+        },
+        {
+            "name": "SK Kampung Pasir",
+            "transport": "P411-02",
+            "distance": 1240.1102188566872
+        },
+        {
+            "name": "Klinik Kesihatan Tampoi",
+            "transport": "walk",
+            "distance": 1.8135590627092644
+        }
+    ],
+    "SK Kampung Pasir": [
+        {
+            "name": "Opp Pulai View Condo",
+            "transport": "P211-02",
+            "distance": 592.1475598303243
+        },
+        {
+            "name": "Opp Pulai View Condo",
+            "transport": "P411-02",
+            "distance": 592.1475598303243
+        },
+        {
+            "name": "Giant Tampoi",
+            "transport": "walk",
+            "distance": 83.3629296526263
+        }
+    ],
+    "Opp Pulai View Condo": [
+        {
+            "name": "bef KIP Mart",
+            "transport": "P211-02",
+            "distance": 1215.901984180009
+        },
+        {
+            "name": "bef KIP Mart",
+            "transport": "P411-02",
+            "distance": 1215.901984180009
+        },
+        {
+            "name": "Kompleks Pekan Rabu Johor Bahru",
+            "transport": "walk",
+            "distance": 75.56426810488914
+        }
+    ],
+    "bef KIP Mart": [
+        {
+            "name": "Opp Paradigm Mall",
+            "transport": "P211-02",
+            "distance": 1013.5816063246456
+        },
+        {
+            "name": "Opp Paradigm Mall",
+            "transport": "P411-02",
+            "distance": 1013.5816063246456
+        },
+        {
+            "name": "Opp Petron Kiosk @ Taman Tampoi Indah",
+            "transport": "walk",
+            "distance": 75.99351086714488
+        }
+    ],
+    "Opp Paradigm Mall": [
+        {
+            "name": "bef McDonald's",
+            "transport": "P211-02",
+            "distance": 912.9347849764429
+        },
+        {
+            "name": "bef McDonald's",
+            "transport": "P411-02",
+            "distance": 912.9347849764429
+        }
+    ],
+    "bef McDonald's": [
+        {
+            "name": "SJK (C) Kuo Kuang",
+            "transport": "P211-02",
+            "distance": 1117.684942999758
+        },
+        {
+            "name": "SJK (C) Kuo Kuang",
+            "transport": "P411-02",
+            "distance": 1117.684942999758
+        }
+    ],
+    "SJK (C) Kuo Kuang": [
+        {
+            "name": "aft Jalan Patin",
+            "transport": "P211-02",
+            "distance": 1016.4820956038735
+        },
+        {
+            "name": "aft Jalan Patin",
+            "transport": "P411-02",
+            "distance": 1016.4820956038735
+        },
+        {
+            "name": "Shophouses @ Jalan Perwira 9",
+            "transport": "walk",
+            "distance": 171.83742158008536
+        },
+        {
+            "name": "Opp SJK (C) Kuo Kuang",
+            "transport": "walk",
+            "distance": 59.22119507324554
+        }
+    ],
+    "aft Jalan Sri Skudai": [
+        {
+            "name": "Shophouses @ Jalan Suasa 1",
+            "transport": "P211-02",
+            "distance": 266.8954011775937
+        }
+    ],
+    "bef UTM Main Gate": [
+        {
+            "name": "UTM Main Gate (Exit)",
+            "transport": "P211-02",
+            "distance": 80.13676381680496
+        },
+        {
+            "name": "UTM Main Gate (Exit)",
+            "transport": "walk",
+            "distance": 80.13676381680496
+        }
+    ],
+    "UTM Main Gate (Exit)": [
+        {
+            "name": "Opp AEON Taman Universiti",
+            "transport": "P211-02",
+            "distance": 2101.5671358477393
+        },
+        {
+            "name": "bef UTM Main Gate",
+            "transport": "walk",
+            "distance": 80.13676381680496
+        }
+    ],
+    "Opp AEON Taman Universiti": [
+        {
+            "name": "Taman Universiti Terminal",
+            "transport": "P211-02",
+            "distance": 520.979846359198
+        },
+        {
+            "name": "Aeon Taman Universiti",
+            "transport": "walk",
+            "distance": 51.07124185833334
+        }
+    ],
+    "Kulai Terminal": [
+        {
+            "name": "Kulai Centre Point",
+            "transport": "P411-01",
+            "distance": 591.0944466627712
+        }
+    ],
+    "Kulai Centre Point": [
+        {
+            "name": "Opp SBS Enterprises (M) Sdn Bhd",
+            "transport": "P411-01",
+            "distance": 1069.8662842015092
+        },
+        {
+            "name": "Opp Arked Kulai",
+            "transport": "walk",
+            "distance": 75.76872656158541
+        }
+    ],
+    "Opp SBS Enterprises (M) Sdn Bhd": [
+        {
+            "name": "Opp Public Bank @ Jalan Susur Kulai 2",
+            "transport": "P411-01",
+            "distance": 426.70673541335253
+        },
+        {
+            "name": "SBS Enterprises (M) Sdn Bhd",
+            "transport": "walk",
+            "distance": 29.103834866649915
+        }
+    ],
+    "Opp Public Bank @ Jalan Susur Kulai 2": [
+        {
+            "name": "Opp Pertubuhan Peladang Kawasan Kulai",
+            "transport": "P411-01",
+            "distance": 867.0599830191206
+        },
+        {
+            "name": "Persatuan Hokkien Kulai",
+            "transport": "walk",
+            "distance": 87.24726184913993
+        }
+    ],
+    "Opp Pertubuhan Peladang Kawasan Kulai": [
+        {
+            "name": "Opp Hospital Temenggong Seri Maharaja Tun Ibrahim Kulaijaya",
+            "transport": "P411-01",
+            "distance": 1248.5573054199294
+        },
+        {
+            "name": "SMK Kulai Besar",
+            "transport": "walk",
+            "distance": 93.86093843943189
+        }
+    ],
+    "Opp Hospital Temenggong Seri Maharaja Tun Ibrahim Kulaijaya": [
+        {
+            "name": "Opp Jalan Cermai",
+            "transport": "P411-01",
+            "distance": 750.8546629126479
+        },
+        {
+            "name": "bef Hospital Temenggong Seri Maharaja Tun Ibrahim Kulaijaya",
+            "transport": "walk",
+            "distance": 26.08857942891503
+        }
+    ],
+    "Opp Jalan Cermai": [
+        {
+            "name": "Opp Stor JKR (D) Kulaijaya",
+            "transport": "P411-01",
+            "distance": 512.0554972000199
+        },
+        {
+            "name": "aft Jalan Cermai 7",
+            "transport": "walk",
+            "distance": 51.38581885348367
+        }
+    ],
+    "Opp Stor JKR (D) Kulaijaya": [
+        {
+            "name": "Opp Wang Loo Motor Sdn Bhd",
+            "transport": "P411-01",
+            "distance": 702.6033409438996
+        },
+        {
+            "name": "Stor JKR (D) Kulaijaya",
+            "transport": "walk",
+            "distance": 39.97000425733884
+        },
+        {
+            "name": "TJ Mart",
+            "transport": "walk",
+            "distance": 132.67144275525789
+        }
+    ],
+    "Opp Wang Loo Motor Sdn Bhd": [
+        {
+            "name": "Opp Pejabat Lembaga Lebuhraya Malaysia",
+            "transport": "P411-01",
+            "distance": 1285.2961744728684
+        },
+        {
+            "name": "aft Jalan Kelah",
+            "transport": "walk",
+            "distance": 162.70525367169984
+        },
+        {
+            "name": "NSTP Senai",
+            "transport": "walk",
+            "distance": 102.64104301442262
+        }
+    ],
+    "Opp Pejabat Lembaga Lebuhraya Malaysia": [
+        {
+            "name": "Medan Selera Senai",
+            "transport": "P411-01",
+            "distance": 1811.7547242969788
+        },
+        {
+            "name": "Pejabat Lembaga Lebuhraya Malaysia",
+            "transport": "walk",
+            "distance": 83.58340414210313
+        }
+    ],
+    "Medan Selera Senai": [
+        {
+            "name": "Opp Sekolah Kebangsaan Senai",
+            "transport": "P411-01",
+            "distance": 582.4155366504465
+        },
+        {
+            "name": "Opp Sekolah Kebangsaan Senai",
+            "transport": "P403-loop",
+            "distance": 582.4155366504465
+        },
+        {
+            "name": "Opp Medan Selera Senai",
+            "transport": "walk",
+            "distance": 221.7700923922069
+        },
+        {
+            "name": "bef Sekolah Kebangsaan Senai",
+            "transport": "walk",
+            "distance": 199.54305612558193
+        }
+    ],
+    "Opp Sekolah Kebangsaan Senai": [
+        {
+            "name": "Opp BHPetrol Kiosk @ Taman Aman",
+            "transport": "P411-01",
+            "distance": 696.3980344568874
+        },
+        {
+            "name": "Opp BHPetrol Kiosk @ Taman Aman",
+            "transport": "P403-loop",
+            "distance": 696.3980344568874
+        },
+        {
+            "name": "bef Sekolah Kebangsaan Senai",
+            "transport": "walk",
+            "distance": 99.3104145636789
+        },
+        {
+            "name": "Pejabat Lembaga Lebuhraya Malaysia",
+            "transport": "walk",
+            "distance": 156.39290772904525
+        }
+    ],
+    "Opp BHPetrol Kiosk @ Taman Aman": [
+        {
+            "name": "aft Lebuhraya Utara-Selatan",
+            "transport": "P411-01",
+            "distance": 2713.6005003976193
+        },
+        {
+            "name": "aft Lebuhraya Utara-Selatan",
+            "transport": "P403-loop",
+            "distance": 2713.6005003976193
+        },
+        {
+            "name": "bef BHPetrol Kiosk @ Taman Aman",
+            "transport": "walk",
+            "distance": 46.70107089683342
+        }
+    ],
+    "aft Lebuhraya Utara-Selatan": [
+        {
+            "name": "Opp Shell Kiosk @ Taman Sri Putri",
+            "transport": "P411-01",
+            "distance": 2631.980988179964
+        },
+        {
+            "name": "Opp Shell Kiosk @ Taman Sri Putri",
+            "transport": "P403-loop",
+            "distance": 2631.980988179964
+        }
+    ],
+    "aft Tenaga Nasional Bhd Substation": [
+        {
+            "name": "bef BHPetrol Kiosk @ Taman Aman",
+            "transport": "P411-02",
+            "distance": 3831.8326929261184
+        },
+        {
+            "name": "bef BHPetrol Kiosk @ Taman Aman",
+            "transport": "P403-loop",
+            "distance": 3831.8326929261184
+        },
+        {
+            "name": "UTM Rumah Alumni",
+            "transport": "walk",
+            "distance": 77.0496636247238
+        }
+    ],
+    "bef BHPetrol Kiosk @ Taman Aman": [
+        {
+            "name": "bef Sekolah Kebangsaan Senai",
+            "transport": "P411-02",
+            "distance": 637.7216629729447
+        },
+        {
+            "name": "bef Sekolah Kebangsaan Senai",
+            "transport": "P403-loop",
+            "distance": 637.7216629729447
+        },
+        {
+            "name": "Opp BHPetrol Kiosk @ Taman Aman",
+            "transport": "walk",
+            "distance": 46.70107089683342
+        },
+        {
+            "name": "Masjid Jamek Pekan Senai",
+            "transport": "walk",
+            "distance": 110.22361624921993
+        }
+    ],
+    "bef Sekolah Kebangsaan Senai": [
+        {
+            "name": "Opp Medan Selera Senai",
+            "transport": "P411-02",
+            "distance": 518.7506264608616
+        },
+        {
+            "name": "Opp Medan Selera Senai",
+            "transport": "P403-loop",
+            "distance": 518.7506264608616
+        },
+        {
+            "name": "Medan Selera Senai",
+            "transport": "walk",
+            "distance": 199.54305612558193
+        },
+        {
+            "name": "Opp Sekolah Kebangsaan Senai",
+            "transport": "walk",
+            "distance": 99.3104145636789
+        }
+    ],
+    "Opp Medan Selera Senai": [
+        {
+            "name": "Masjid Jamek Pekan Senai",
+            "transport": "P411-02",
+            "distance": 752.7237416801186
+        },
+        {
+            "name": "bef Econsave @ Senai",
+            "transport": "P403-loop",
+            "distance": 1955.155202558169
+        },
+        {
+            "name": "Medan Selera Senai",
+            "transport": "walk",
+            "distance": 221.7700923922069
+        }
+    ],
+    "Masjid Jamek Pekan Senai": [
+        {
+            "name": "Opp Deway Motor Trading",
+            "transport": "P411-02",
+            "distance": 838.5783502475376
+        },
+        {
+            "name": "bef BHPetrol Kiosk @ Taman Aman",
+            "transport": "walk",
+            "distance": 110.22361624921993
+        }
+    ],
+    "Opp Deway Motor Trading": [
+        {
+            "name": "Pejabat Lembaga Lebuhraya Malaysia",
+            "transport": "P411-02",
+            "distance": 862.041849321297
+        }
+    ],
+    "Pejabat Lembaga Lebuhraya Malaysia": [
+        {
+            "name": "aft Jalan Kelah",
+            "transport": "P411-02",
+            "distance": 1327.900809913187
+        },
+        {
+            "name": "Opp Pejabat Lembaga Lebuhraya Malaysia",
+            "transport": "walk",
+            "distance": 83.58340414210313
+        },
+        {
+            "name": "Opp Sekolah Kebangsaan Senai",
+            "transport": "walk",
+            "distance": 156.39290772904525
+        }
+    ],
+    "aft Jalan Kelah": [
+        {
+            "name": "Stor JKR (D) Kulaijaya",
+            "transport": "P411-02",
+            "distance": 532.5788421193245
+        },
+        {
+            "name": "Opp Wang Loo Motor Sdn Bhd",
+            "transport": "walk",
+            "distance": 162.70525367169984
+        },
+        {
+            "name": "NSTP Senai",
+            "transport": "walk",
+            "distance": 221.16653574616106
+        }
+    ],
+    "Stor JKR (D) Kulaijaya": [
+        {
+            "name": "TJ Mart",
+            "transport": "P411-02",
+            "distance": 149.38689228097363
+        },
+        {
+            "name": "Opp Stor JKR (D) Kulaijaya",
+            "transport": "walk",
+            "distance": 39.97000425733884
+        },
+        {
+            "name": "TJ Mart",
+            "transport": "walk",
+            "distance": 149.38689228097363
+        }
+    ],
+    "TJ Mart": [
+        {
+            "name": "aft Jalan Cermai 7",
+            "transport": "P411-02",
+            "distance": 326.93139712387654
+        },
+        {
+            "name": "Opp Stor JKR (D) Kulaijaya",
+            "transport": "walk",
+            "distance": 132.67144275525789
+        },
+        {
+            "name": "Stor JKR (D) Kulaijaya",
+            "transport": "walk",
+            "distance": 149.38689228097363
+        }
+    ],
+    "aft Jalan Cermai 7": [
+        {
+            "name": "bef Hospital Temenggong Seri Maharaja Tun Ibrahim Kulaijaya",
+            "transport": "P411-02",
+            "distance": 759.1924287762109
+        },
+        {
+            "name": "Opp Jalan Cermai",
+            "transport": "walk",
+            "distance": 51.38581885348367
+        }
+    ],
+    "bef Hospital Temenggong Seri Maharaja Tun Ibrahim Kulaijaya": [
+        {
+            "name": "SMK Kulai Besar",
+            "transport": "P411-02",
+            "distance": 1204.082487939076
+        },
+        {
+            "name": "Opp Hospital Temenggong Seri Maharaja Tun Ibrahim Kulaijaya",
+            "transport": "walk",
+            "distance": 26.08857942891503
+        }
+    ],
+    "SMK Kulai Besar": [
+        {
+            "name": "aft Persiaran Indahpura 4",
+            "transport": "P411-02",
+            "distance": 325.9712969712764
+        },
+        {
+            "name": "Opp Pertubuhan Peladang Kawasan Kulai",
+            "transport": "walk",
+            "distance": 93.86093843943189
+        }
+    ],
+    "aft Persiaran Indahpura 4": [
+        {
+            "name": "Persatuan Hokkien Kulai",
+            "transport": "P411-02",
+            "distance": 533.3021177412276
+        }
+    ],
+    "Persatuan Hokkien Kulai": [
+        {
+            "name": "SBS Enterprises (M) Sdn Bhd",
+            "transport": "P411-02",
+            "distance": 362.3225773583716
+        },
+        {
+            "name": "Opp Public Bank @ Jalan Susur Kulai 2",
+            "transport": "walk",
+            "distance": 87.24726184913993
+        }
+    ],
+    "SBS Enterprises (M) Sdn Bhd": [
+        {
+            "name": "Opp Arked Kulai",
+            "transport": "P411-02",
+            "distance": 963.8576690341037
+        },
+        {
+            "name": "Opp SBS Enterprises (M) Sdn Bhd",
+            "transport": "walk",
+            "distance": 29.103834866649915
+        }
+    ],
+    "Opp Arked Kulai": [
+        {
+            "name": "Kulai Terminal",
+            "transport": "P411-02",
+            "distance": 650.679977879484
+        },
+        {
+            "name": "Kulai Centre Point",
+            "transport": "walk",
+            "distance": 75.76872656158541
+        }
+    ],
+    "Econsave Senai": [
+        {
+            "name": "Opp Pusat Hemodialisis Rotary Kulai",
+            "transport": "P403-loop",
+            "distance": 425.40464138189895
+        },
+        {
+            "name": "Taman Mewah",
+            "transport": "walk",
+            "distance": 127.72703246729523
+        },
+        {
+            "name": "bef Econsave @ Senai",
+            "transport": "walk",
+            "distance": 166.06254123359355
+        }
+    ],
+    "Opp Pusat Hemodialisis Rotary Kulai": [
+        {
+            "name": "Opp Taman Bintang",
+            "transport": "P403-loop",
+            "distance": 230.5223439758582
+        }
+    ],
+    "Opp Taman Bintang": [
+        {
+            "name": "Kawasan Perindustrian Senai 3",
+            "transport": "P403-loop",
+            "distance": 1144.1004583872461
+        },
+        {
+            "name": "Taman Bintang",
+            "transport": "walk",
+            "distance": 119.09382590173075
+        }
+    ],
+    "Kawasan Perindustrian Senai 3": [
+        {
+            "name": "Senai Airport Terminal",
+            "transport": "P403-loop",
+            "distance": 1745.8788298241784
+        }
+    ],
+    "Senai Airport Terminal": [
+        {
+            "name": "NSTP Senai",
+            "transport": "P403-loop",
+            "distance": 1329.6457520755835
+        }
+    ],
+    "NSTP Senai": [
+        {
+            "name": "Taman Bintang",
+            "transport": "P403-loop",
+            "distance": 1412.2608829319904
+        },
+        {
+            "name": "Opp Wang Loo Motor Sdn Bhd",
+            "transport": "walk",
+            "distance": 102.64104301442262
+        },
+        {
+            "name": "aft Jalan Kelah",
+            "transport": "walk",
+            "distance": 221.16653574616106
+        },
+        {
+            "name": "Taman Mewah",
+            "transport": "walk",
+            "distance": 103.62256299368592
+        }
+    ],
+    "Taman Bintang": [
+        {
+            "name": "Taman Mewah",
+            "transport": "P403-loop",
+            "distance": 740.9754495709776
+        },
+        {
+            "name": "Opp Taman Bintang",
+            "transport": "walk",
+            "distance": 119.09382590173075
+        }
+    ],
+    "Taman Mewah": [
+        {
+            "name": "Medan Selera Senai",
+            "transport": "P403-loop",
+            "distance": 1696.1467368195797
+        },
+        {
+            "name": "NSTP Senai",
+            "transport": "walk",
+            "distance": 103.62256299368592
+        },
+        {
+            "name": "bef Econsave @ Senai",
+            "transport": "walk",
+            "distance": 50.55300120410239
+        },
+        {
+            "name": "Econsave Senai",
+            "transport": "walk",
+            "distance": 127.72703246729523
+        }
+    ],
+    "bef Econsave @ Senai": [
+        {
+            "name": "Econsave Senai",
+            "transport": "P403-loop",
+            "distance": 166.06254123359358
+        },
+        {
+            "name": "Econsave Senai",
+            "transport": "walk",
+            "distance": 166.06254123359358
+        },
+        {
+            "name": "Taman Mewah",
+            "transport": "walk",
+            "distance": 50.55300120410239
+        }
+    ]
+}

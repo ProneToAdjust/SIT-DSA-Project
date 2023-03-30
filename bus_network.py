@@ -2,10 +2,20 @@ from utils import BusStop
 from haversine import haversine, Unit
 import pickle
 from pprint import pprint
+import json
+from math import inf
 
 class BusNetwork:
     def __init__(self) -> None:
-        
+        f = open('route_modified222.json')
+        self.route = json.load(f)
+        f.close()
+
+        f = open('gps.json')
+        self.gps = json.load(f)
+        f.close()
+
+        # previous version
         with open('bus_network_w_distances.pickle', 'rb') as file:
             bus_network = pickle.load(file)
             self.bus_stops = bus_network['stops']
@@ -14,6 +24,117 @@ class BusNetwork:
 
             for name in self.distances:
                 self.distances[name][name] = 0
+
+    def get_route_json(self, start_coords, end_coords):
+        closest_start_stop_name = self.closest_stop_to_coord_json(start_coords)
+        closest_end_stop_name = self.closest_stop_to_coord_json(end_coords)
+        
+        path = [[closest_start_stop_name,"WALK",0]]
+
+        if closest_start_stop_name != closest_end_stop_name:
+            path = self.a_star_json(closest_start_stop_name, closest_end_stop_name)
+
+        return path
+    
+    def closest_stop_to_coord_json(self, coords):
+        closest_stop_dist = inf
+        for stop_name in self.gps:
+            current_stop_dist = haversine(coords, tuple(self.gps[stop_name]), Unit.METERS)
+            if current_stop_dist < closest_stop_dist:
+                closest_stop_name = str(stop_name)
+                closest_stop_dist = current_stop_dist
+        return closest_stop_name
+
+    def a_star_json(self, closest_start_stop_name, closest_end_stop_name):
+        end_coords = tuple(self.gps[closest_end_stop_name])
+        hueristics_dist = haversine(tuple(self.gps[closest_start_stop_name]), end_coords, Unit.METERS)
+        open = {closest_start_stop_name:{"from":closest_start_stop_name, "cost":0, "hueristics":hueristics_dist, "transport":"WALK"}}
+        close = {}
+        current_stop_name = closest_start_stop_name
+
+        #range 0 to INFINITY
+        walking_penalty = 3
+        #range 0 to 1
+        bus_incentive = 0.6
+        #range 0 to 1
+        same_bus_incentive = 0.9
+
+        while current_stop_name != closest_end_stop_name:
+            # Check routes for current stop
+            next_stop_info = self.route[current_stop_name]
+            for next_stop_name in next_stop_info:
+                # Continues if next stop not in closed route
+                if close.get(next_stop_name.get("name")) == None:
+                    # Check if next stop exists in open route
+                    # if it does not exist, add it to open route
+                    # otherwise update if the cost is lower
+                    if open.get(next_stop_name.get("name")) == None:
+                        next_stop_cost = open[current_stop_name]["cost"] + next_stop_name.get("distance")
+                        next_stop_hueristics = haversine(tuple(self.gps[next_stop_name.get("name")]), end_coords, Unit.METERS)
+                        next_stop_transport = next_stop_name.get("transport")
+
+                        current_transport = open[current_stop_name]["transport"]
+
+                        # Penalize walking and incintivize travelling by bus 
+                        if next_stop_transport == "walk":
+                            next_stop_cost += next_stop_name.get("distance") * walking_penalty
+                        elif next_stop_transport == current_transport:
+                            next_stop_cost -= next_stop_name.get("distance") * same_bus_incentive
+                        else:
+                            next_stop_cost -= next_stop_name.get("distance") * bus_incentive
+
+                        open[next_stop_name.get("name")] = {
+                            "from":current_stop_name, 
+                            "cost":next_stop_cost, 
+                            "hueristics":next_stop_hueristics, 
+                            "transport":next_stop_transport}
+                    else:
+                        next_stop_cost_new = open[current_stop_name]["cost"] + next_stop_name.get("distance")
+                        next_stop_transport_new = next_stop_name.get("transport")
+
+                        next_stop_cost_current = open[next_stop_name.get("name")]["cost"]
+                        current_transport = open[current_stop_name]["transport"]
+
+                        # Penalize walking and incintivize travelling by bus
+                        if next_stop_transport_new == "walk":
+                            next_stop_cost_new += next_stop_name.get("distance") * walking_penalty
+                        elif next_stop_transport_new == current_transport:
+                            next_stop_cost_new -= next_stop_name.get("distance") * same_bus_incentive
+                        else:
+                            next_stop_cost_new -= next_stop_name.get("distance") * bus_incentive
+
+                        if next_stop_cost_new < next_stop_cost_current:
+                            open[next_stop_name.get("name")]["from"] = current_stop_name
+                            open[next_stop_name.get("name")]["cost"] = next_stop_cost_new
+                            open[next_stop_name.get("name")]["transport"] = next_stop_transport_new
+
+            # Shift current stop from open list into close list
+            close[current_stop_name] = open[current_stop_name]
+            open.pop(current_stop_name)
+
+            # Get the closest stop from the open queue
+            closest_stop_dist = inf
+            for bus_stop in open:
+                bus_stop_cost = open[bus_stop]["cost"]
+                bus_stop_hueristics = open[bus_stop]["hueristics"]
+                bus_stop_total = bus_stop_cost + bus_stop_hueristics
+                if bus_stop_total < closest_stop_dist:
+                    current_stop_name = bus_stop
+                    closest_stop_dist = bus_stop_total
+
+        # Shift end stop from open list into close list
+        close[current_stop_name] = open[current_stop_name]
+        open.pop(current_stop_name)
+
+        route = []
+        while current_stop_name != closest_start_stop_name:
+            route.append([current_stop_name, close[current_stop_name]["transport"], close[current_stop_name]["cost"]])
+            current_stop_name = close[current_stop_name]["from"]
+        route.append([current_stop_name, close[current_stop_name]["transport"], close[current_stop_name]["cost"]])
+        route.reverse()
+
+        return route
+
 
     def get_route(self, start_coords, end_coords):
         closest_bus_stop_to_start = self.get_closest_node_to_coord(start_coords)
@@ -339,14 +460,9 @@ if __name__ == '__main__':
     bn = BusNetwork()
 
     # start coords are near kulai terminal, end coords are near senai airport
-    optimal_route = bn.get_route((1.663662, 103.598004), (1.635619, 103.665918))
+    optimal_route = bn.get_route_json((1.663662, 103.598004), (1.635619, 103.665918))
 
     # print route to show data structure
-    pprint(optimal_route)
+    for x in optimal_route:
+        print(x)
     
-    for route in optimal_route:
-        print(f"From {route['nodes'][0].name}")
-        if route['bus_service'] == 'walk':
-            print(f"Walk to {route['nodes'][-1].name}")
-        else:
-            print(f"Take {route['bus_service']} to {route['nodes'][-1].name}")
