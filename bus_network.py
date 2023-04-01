@@ -16,13 +16,15 @@ class BusNetwork:
         with open('distances.json', 'r') as file:
             self.distances = json.load(file)
             file.close()
-
-            for stop1 in self.distances:
-                for stop2 in self.distances[stop1]:
-                    if self.distances[stop1][stop2] < 100 and self.distances[stop1][stop2] != 0:
-                        busStop_Obj1 = self.bus_stops[stop1]
-                        busStop_Obj2 = self.bus_stops[stop2]
-                        busStop_Obj1.next_stops["walk"] = busStop_Obj2
+        
+        # iterate through all bus stops
+        # if distance between stops is less than 100m, add a walk route between them
+        for stop_1 in self.distances:
+            for stop_2 in self.distances[stop_1]:
+                if self.distances[stop_1][stop_2] < 100 and self.distances[stop_1][stop_2] != 0:
+                    stop_node_1 = self.bus_stops[stop_1]
+                    stop_node_2 = self.bus_stops[stop_2]
+                    stop_node_1.next_stops["walk"] = stop_node_2
 
     def get_route(self, start_coords, end_coords):
         closest_bus_stop_to_start = self.get_closest_node_to_coord(start_coords)
