@@ -89,6 +89,7 @@ class MyApp(QWidget):
             location=coordinate,
             html='<div style="font-size: 25px"></div>'
         )
+        folium.LatLngPopup().add_to(self.m)
 
         # Customize layer control CSS style
         css = """
