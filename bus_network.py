@@ -30,15 +30,21 @@ class BusNetwork:
         closest_bus_stop_to_start = self.get_closest_node_to_coord(start_coords)
         closest_bus_stop_to_end = self.get_closest_node_to_coord(end_coords)
 
-        node_list = self.a_star_iterative(closest_bus_stop_to_start, closest_bus_stop_to_end)
+        # get shortest path between start and end bus stop nodes
+        node_list = self.a_star(closest_bus_stop_to_start, closest_bus_stop_to_end)
 
         route = []
 
         start_index = 0
         
+        # while there are still nodes to process
         while node_list:
         # setup route count
+
             route_count = {}
+
+            # add all routes from first node to route count
+            # and initialise their counts to 1
             for route_name in node_list[0].next_stops:
                 route_count[route_name] = 1
 
@@ -46,10 +52,12 @@ class BusNetwork:
                 valid_routes = []
                 
                 if node is not closest_bus_stop_to_end:
+                    # get all routes that are valid from this node
                     for route_name in node_list[index+1].next_stops:
                         if route_name in route_count:
                             valid_routes.append(route_name)
 
+                # increment route count for all valid routes
                 for route_name in valid_routes:
                     route_count[route_name] += 1
 
@@ -74,14 +82,18 @@ class BusNetwork:
                         route.append({'bus_service' : 'walk',
                                       'nodes' : node_list[start_index:index+1]})
                     else:
-                        # add bus route to route dict
+                        # add route to route list
                         route.append({'bus_service' : max(route_count, key=route_count.get),
                                       'nodes' : node_list[start_index:index+1]})
 
                     start_index = index
 
+                    # temporarily remove walk routes from next stops
                     next_stops_wo_walk = self.without_keys(node.next_stops, ['walk'])
+
+                    # if next node in list is not in the next stops of the current node
                     if node_list[index+1] not in next_stops_wo_walk.values():
+                        # walk to the next stop
                         route.append({'bus_service' : 'walk',
                                       'nodes' : node_list[start_index:index+2]})
                         start_index = index + 1
@@ -96,10 +108,11 @@ class BusNetwork:
 
         return route
     
+    # remove keys from dict
     def without_keys(self, d, keys):
         return {x: d[x] for x in d if x not in keys}
     
-    def a_star_iterative(self, start_node, end_node):
+    def a_star(self, start_node, end_node):
         open_list = [start_node]
         closed_list = []
 
@@ -117,8 +130,6 @@ class BusNetwork:
 
                 if current_node == None or cost[node] + self.distances[node.name][end_node.name] < cost[current_node] + self.distances[current_node.name][end_node.name]:
                     current_node = node
-
-            # print(current_node.name)
 
             if current_node == None:
                 print('No path')
@@ -149,11 +160,14 @@ class BusNetwork:
                     cost[neighbor_node] = cost[current_node] + self.distances[current_node.name][neighbor_node.name]
 
                 else:
+                    # if neighbor node is already in open list, check if new cost is lower
+                    # if it is, update cost and parent
                     new_cost = cost[current_node] + self.distances[current_node.name][neighbor_node.name]
                     if new_cost < cost[neighbor_node]:
                         cost[neighbor_node] = new_cost
                         parents[neighbor_node] = current_node
 
+                        # if neighbor node is in closed list, move it to open list
                         if neighbor_node in closed_list:
                             closed_list.remove(neighbor_node)
                             open_list.append(neighbor_node)
