@@ -1,26 +1,28 @@
-from utils import BusStop
+from classes import BusStop
 from haversine import haversine, Unit
 import pickle
+import json
 from pprint import pprint
 from math import inf
 
 class BusNetwork:
     def __init__(self) -> None:
-        with open('bus_network_w_distances.pickle', 'rb') as file:
+        with open('bus_network.pickle', 'rb') as file:
             bus_network = pickle.load(file)
             self.bus_stops = bus_network['stops']
             self.bus_services = bus_network['routes']
-            self.distances = bus_network['distances']
+            file.close()
+
+        with open('distances.json', 'r') as file:
+            self.distances = json.load(file)
+            file.close()
 
             for stop1 in self.distances:
                 for stop2 in self.distances[stop1]:
-                    if self.distances[stop1][stop2] < 100:
+                    if self.distances[stop1][stop2] < 100 and self.distances[stop1][stop2] != 0:
                         busStop_Obj1 = self.bus_stops[stop1]
                         busStop_Obj2 = self.bus_stops[stop2]
                         busStop_Obj1.next_stops["walk"] = busStop_Obj2
-
-            for name in self.distances:
-                self.distances[name][name] = 0
 
     def get_route(self, start_coords, end_coords):
         closest_bus_stop_to_start = self.get_closest_node_to_coord(start_coords)
