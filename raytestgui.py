@@ -22,8 +22,6 @@ from IPython.display import display
 #place_lat = data.Latitude
 #place_lng = data.Longtitude
 # create empty lists to store the latitude and longitude coordinates of the markers
-start_coords = []
-dest_coords = []
 
 print(folium.__version__)
 
@@ -45,12 +43,18 @@ class MyApp(QWidget):
         # Create textboxes instances
         self.textBox_start = QLineEdit()
         self.textBox_end = QLineEdit()
+        self.textBox_route=QPlainTextEdit()
+        self.textBox_route.setReadOnly(True)
         # Create textboxes placeholders
         self.textBox_start.setPlaceholderText("Enter source...")
         self.textBox_end.setPlaceholderText("Enter destination...")
+        self.textBox_route.setPlaceholderText("Bus Route here")
+
         # Create textboxes sizes
         self.textBox_start.setFixedSize(350, 50)
         self.textBox_end.setFixedSize(350, 50)
+        self.textBox_route.setFixedSize(700,1500)
+
         # Create searchButton instance and onclick function
         self.search_button = QPushButton((self.tr("Find path")))
         # Connect the search button to the on_button_click function
@@ -60,20 +64,27 @@ class MyApp(QWidget):
         # Connect the clear button to the empty_map function
         self.clear_button.clicked.connect(self.empty_map)
 
+
         
         # Add the buttons and textfields to a QHBoxLayout
         self.button_layout_top = QHBoxLayout()
         self.button_layout_mid = QHBoxLayout()
+        self.text_layout_bot = QHBoxLayout()
         self.main_layout = QVBoxLayout()
         self.button_layout_top.addWidget(self.textBox_start)
         self.button_layout_top.addWidget(self.textBox_end)
+
         self.button_layout_mid.addWidget(self.search_button)
         self.button_layout_mid.addWidget(self.clear_button)
+        self.text_layout_bot.addWidget(self.textBox_route)
         self.main_layout.addLayout(self.button_layout_top)
         self.main_layout.addLayout(self.button_layout_mid)
+        self.main_layout.addLayout(self.text_layout_bot)
         # Set the alignments of the button layouts
         self.button_layout_top.setAlignment(QtCore.Qt.AlignTop)
         self.button_layout_mid.setAlignment(QtCore.Qt.AlignTop)
+        self.text_layout_bot.setAlignment(QtCore.Qt.AlignBottom)
+
         self.main_layout.setAlignment(QtCore.Qt.AlignTop)
 
         # Add the button layout to the main layout
@@ -135,6 +146,7 @@ class MyApp(QWidget):
 
     # runs when "get path" button has been clicked
     def on_button_click(self):
+        bus_route_breakdown = ""
         # get data from the textfields and initialise into the coordinates variables
         startcoordinate = self.textBox_start.text()
         endcoordinate = self.textBox_end.text()
@@ -149,11 +161,26 @@ class MyApp(QWidget):
         walking = []
         # read the bus network get_route with the start and end coordinates
         data = BusNetwork().get_route((startcoord), (endcoord))
+        """print(f"From ("+str(startcoord[0])+") ("+str(startcoord[1])+")")
+        print("Walk to "+data[0]['nodes'][1].name)
+        print("From "+data[1]['nodes'][0].name)
+        print("Take "+data[1]['bus_service']+" to "+data[2]['nodes'][0].name)"""
+
+        
         # iterate the bus nodes
         for route in data:
-            services += 1
+            print(f"From {route['nodes'][0].name}")
+            bus_route_breakdown=bus_route_breakdown+"\nFrom "+str(route['nodes'][0].name)
+
             # for actual bus stops
             if route['bus_service'] != 'walk':
+                services += 1
+                print(f"Take {route['bus_service']} to {route['nodes'][-1].name}")
+                bus_route_breakdown=bus_route_breakdown+"\nTake "+ str(route['bus_service'])+" to "+str(route['nodes'][-1].name)
+
+                print(str(len(route['nodes'])-1) +" stops")
+                bus_route_breakdown=bus_route_breakdown+"\n"+str(len(route['nodes'])-1) +" stops"
+
                 for i in range(0, len(route['nodes'])):
                     # different services = different colours
                     if services % 2 == 0:
@@ -186,6 +213,8 @@ class MyApp(QWidget):
                     
             # for walking points        
             elif route['bus_service'] == 'walk':
+                print(f"Walk to {route['nodes'][-1].name}")
+                bus_route_breakdown=bus_route_breakdown+"\nWalk to "+ str(route['nodes'][-1].name)
                 # iterate through all the walking nodes
                 for i in range(0, len(route['nodes'])):
                     # put node name as popup content
@@ -212,6 +241,7 @@ class MyApp(QWidget):
                     spots_walking = [[coord[1], coord[0]] for coord in routing_walking['features'][0]['geometry']['coordinates']]
                     # draw the walking route on the folium map
                     folium.PolyLine(locations=spots_walking,weight=5,color='green').add_to(self.m)
+        
 
         # put a marker at the start of the route
         folium.Marker(
@@ -224,6 +254,7 @@ class MyApp(QWidget):
             location=[float(endcoord[0]), float(endcoord[1])],
             popup="Destination"
         ).add_to(self.m)
+        self.textBox_route.setPlaceholderText(bus_route_breakdown)
         
 
         # Save the folium map data to a BytesIO object
@@ -243,38 +274,6 @@ class MyApp(QWidget):
 if __name__ == '__main__':
     bn = BusNetwork()
 
-    # start coords are near kulai terminal, end coords are near senai airport
-    #startingcoords = (1.663662, 103.598004)
-    #optimal_route = bn.get_route(startingcoords, (1.635619, 103.665918))
-    
-    # start coords are econsave, end coords are near kulai terminal
-    startingcoords = (1.611519115179376, 103.65587602883747)
-    optimal_route = bn.get_route(startingcoords, (1.6618215659380255, 103.59852337572669))
-
-    # print route to show data structure
-    #pprint(optimal_route)
-    print("Bus stops")
-    
-    for route in optimal_route:
-        if route['bus_service'] != 'walk':
-            for i in range (0, len(route['nodes'])):
-                print(route['nodes'][i].coordinates)
-    
-       # if route['bus_service'] != 'walk':
-        #    print(f"location {route['bus_service']} and {route['nodes'][-1].name}")
-    
-        
-    print("----------------")
-    print("Route here")
-    print("----------------")
-    
-    for route in optimal_route:
-        print(f"From {route['nodes'][0].name}")
-        if route['bus_service'] == 'walk':
-            print(f"Walk to {route['nodes'][-1].name}")
-        else:
-            print(f"Take {route['bus_service']} to {route['nodes'][-1].name}")
-    
     # initialise openrouteservice client with the API key
     client = openrouteservice.Client(key='5b3ce3597851110001cf6248c8894c015c094545be85cfc3aaf5b86f')
     app = QApplication(sys.argv)
