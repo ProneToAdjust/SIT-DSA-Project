@@ -173,8 +173,6 @@ class MyApp(QWidget):
 
                 # specify an icon of your desired shape or chosing in place for the coordinates points
                 services = 0
-                locations = []
-                walking = []
                 # read the bus network get_route with the start and end coordinates
                 data = BusNetwork().get_route((startcoord), (endcoord))
                 """print(f"From ("+str(startcoord[0])+") ("+str(startcoord[1])+")")
@@ -184,6 +182,8 @@ class MyApp(QWidget):
 
                 # iterate the bus nodes
                 for route in data:
+                    locations = []
+                    walking = []
                     print(f"From {route['nodes'][0].name}")
                     bus_route_breakdown = (
                         bus_route_breakdown + "\nFrom " + str(route["nodes"][0].name)
@@ -308,7 +308,9 @@ class MyApp(QWidget):
                                 ]
                             )
                             # get a pair of the walking coordinates and draw the route using openrouteservice
-                        for i in range(0, len(route["nodes"]) - 1, 2):
+                        for i, node in enumerate(route['nodes']):
+                            if i == len(route['nodes']) - 1:
+                                break
                             first_walk = walking[i]
                             second_walk = walking[i + 1]
                             routing_walking = client.directions(
@@ -316,12 +318,16 @@ class MyApp(QWidget):
                                 profile="foot-walking",
                                 format="geojson",
                             )
+                        
+                            route_coordinates = routing_walking["features"][0]["geometry"]["coordinates"]
+                            if len(route_coordinates) == 1:
+                                route_coordinates.insert(0, first_walk)
+                                route_coordinates.append(second_walk)
+
                             # get the route from the routing_walking
                             spots_walking = [
                                 [coord[1], coord[0]]
-                                for coord in routing_walking["features"][0]["geometry"][
-                                    "coordinates"
-                                ]
+                                for coord in route_coordinates
                             ]
                             # draw the walking route on the folium map
                             folium.PolyLine(
