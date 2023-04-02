@@ -1,3 +1,8 @@
+"""
+    This file contains the classes used in the project.
+"""
+
+
 class BusStop():
     def __init__(self, name, coordinates) -> None:
         self.name = name

@@ -5,6 +5,14 @@ import json
 from pprint import pprint
 from math import inf
 
+"""
+    This class represents the bus network and contains 
+    methods to find the shortest route between two points.
+    This class is used in the main_gui.py file.
+    You can run this file to see an example of how to use this class.
+
+"""
+
 
 class BusNetwork:
     def __init__(self) -> None:

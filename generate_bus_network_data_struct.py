@@ -2,6 +2,11 @@ import pandas as pd
 import pickle
 from classes import BusStop, BusRoute
 
+"""
+    This script generates a data structure that represents the bus network and 
+    stores it in a pickle file to be used in bus_network.py.
+"""
+
 
 def main():
     sheets = pd.read_excel("bus_stops.xlsx", sheet_name=None)

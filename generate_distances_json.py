@@ -5,6 +5,10 @@ import osmnx
 import taxicab
 from haversine import haversine, Unit
 
+"""
+This script generates a JSON file containing the distances between every bus stop in the network.
+"""
+
 
 def get_shortest_distance(start, end):
     # Use OSMnx to get the street network within the bounding box of the origin and destination points
