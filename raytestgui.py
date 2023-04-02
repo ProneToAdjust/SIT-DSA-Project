@@ -1,8 +1,3 @@
-import pandas as pd
-from classes import BusStop, BusRoute
-from haversine import haversine, Unit
-import pickle
-from pprint import pprint
 import sys
 import io
 import folium
@@ -11,12 +6,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtWebEngineWidgets import QWebEngineView
 from folium.plugins import LocateControl
 import openrouteservice
-import json
 from bus_network import BusNetwork
-from folium.plugins import MousePosition
-from folium.vector_layers import PolyLine, Marker
-import ipywidgets as widgets
-from IPython.display import display
 
 # retrieve rows based on Lat/Long columns
 # place_lat = data.Latitude
@@ -327,7 +317,9 @@ class MyApp(QWidget):
                             # get the route from the routing_walking
                             spots_walking = [
                                 [coord[1], coord[0]]
-                                for coord in route_coordinates
+                                for coord in routing_walking["features"][0]["geometry"][
+                                    "coordinates"
+                                ]
                             ]
                             # draw the walking route on the folium map
                             folium.PolyLine(
