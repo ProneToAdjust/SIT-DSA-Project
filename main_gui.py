@@ -338,7 +338,7 @@ class MyApp(QWidget):
                     location=[float(endcoord[0]), float(endcoord[1])],
                     popup="Destination",
                 ).add_to(self.m)
-                self.textBox_route.setPlaceholderText(bus_route_breakdown)
+                self.textBox_route.setPlainText(bus_route_breakdown)
 
                 # Save the folium map data to a BytesIO object
                 data = io.BytesIO()
@@ -357,6 +357,7 @@ class MyApp(QWidget):
         ):  # Check if has any data apart from initializing data
             # Remove all markers and layers from the map
             self.m._children.clear()
+            self.textBox_route.clear()
 
             # Redraw the map
             coordinate = (self.middleLat, self.middleLong)
