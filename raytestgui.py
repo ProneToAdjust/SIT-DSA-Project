@@ -317,7 +317,9 @@ class MyApp(QWidget):
                             # get the route from the routing_walking
                             spots_walking = [
                                 [coord[1], coord[0]]
-                                for coord in route_coordinates
+                                for coord in routing_walking["features"][0]["geometry"][
+                                    "coordinates"
+                                ]
                             ]
                             # draw the walking route on the folium map
                             folium.PolyLine(
